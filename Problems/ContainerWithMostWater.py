@@ -10,7 +10,7 @@ class Solution:
             #Checking if there is a new highest area
             if container > maxarea:
                 maxarea = container
-            #Moving the pointers based of the value of them
+            #Moving the pointers based off the value of them
             if (height[left] < height[right]):
                 left += 1
             else:
