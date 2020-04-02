@@ -3,7 +3,7 @@ class Solution:
         maxarea = 0
         left = 0
         right = len(height) - 1
-        #If the right pointer passes the left one
+        #While the right pointer isn't beyond the left one
         while left < right:
             #Getting the minimum value of the two pointers, and multiplying to get the area
             container = min(height[left], height[right]) * (right - left)
