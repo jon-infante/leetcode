@@ -7,7 +7,7 @@
 class Solution:
     def searchInsert(self, nums, target):
         #Checking if it would be the first index in the list
-        if target < nums[0]:
+        if target <= nums[0]:
             return 0
         for i in range(len(nums)-1):
             if target > nums[i] and target <= nums[i+1]:
