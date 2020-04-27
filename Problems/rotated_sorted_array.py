@@ -8,7 +8,6 @@
 
 # Your algorithm's runtime complexity must be in the order of O(log n).
 
-lis = [8, 9, 11, 14, 0, 1, 2, 5, 7]
 class Solution:
     def search(self, nums, target):
         if nums is None or len(nums) == 0:
@@ -33,11 +32,13 @@ class Solution:
                     min = mid + 1
                 else:
                     max = mid - 1
-        #Checks if it was found
+        #Checks if it was found again, this time for the min value
         if nums[min] == target:
             return min
         else:
             return -1
 
-searched = Solution()      
-print(searched.search(lis, 1))
+if __name__ == '__main__':
+    lis = [8, 9, 11, 14, 0, 1, 2, 5, 7]
+    searched = Solution()      
+    print(searched.search(lis, 1))
