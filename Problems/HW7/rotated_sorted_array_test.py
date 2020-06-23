@@ -1,4 +1,4 @@
-from rotated_sorted_array import Solution
+from rotated_sorted_nums import Solution
 import unittest
 
 class InsertTest(unittest.TestCase):

@@ -1,4 +1,4 @@
-## Rotated Sorted Array
+## Rotated Sorted nums
 
 | Variable | Value |
 | --- | --- |
