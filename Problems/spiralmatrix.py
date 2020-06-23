@@ -4,7 +4,7 @@ class Solution:
     def spiralOrder(self, matrix):
         """Given a matrix, return the elemnts of the matrix in a clockwise order.
         
-        list: matrix
+        matrix: list
         """
         spiral = []
         positive = True

@@ -9,7 +9,7 @@ class Solution:
         """Returns the square root of a given number. Increments the root up and down
         until it gets a precise measurement.
         
-        int: intx
+        intx: int
         """
         #Returns 1 if the input is 1, square root of itself
         if intx == 1:
