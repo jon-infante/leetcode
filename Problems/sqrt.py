@@ -16,23 +16,33 @@ class Solution:
         if intx == 1:
             return 1
         
+        beginning = True
         root = 0
         #Scale to add or subtract decimal numbers from the root number
         increment = 1
 
         #If the square root hasn't been found yet and it hasn't gone to a precise enough root yet
         while root**2 != intx:
+            print(root)
+            #When the increment gets below 1/10, we go to return the integer of this number
             if increment < 1/10:
                 break
             #If we passed the square root number
             if root**2 > intx:
+                #Changing beginning so we do not increase the increment ever again.
+                beginning = False
                 #Decrease the root by the determined decimal increment
                 root -= increment
-                #Change the increment scale by a factor of 10
+                #Changing the increment scale by a factor of 10
                 increment = increment/10
             else:
+                if beginning:
+                    #Changing the increment scale by a factor of 10
+                    increment = increment*10
                 #Increase the root by the determined decimal increment
                 root += increment
+                #Determining the scale of the number to get a more fitting increment
+                
                 
 
         return int(root)
@@ -40,4 +50,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.mySqrt(8))
+    print(solution.mySqrt(1999))
