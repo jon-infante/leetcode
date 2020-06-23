@@ -10,7 +10,6 @@ class Solution:
         until it gets a precise measurement.
         
         int: intx
-        float: root, increment
         """
         #Returns 1 if the input is 1, square root of itself
         if intx == 1:
