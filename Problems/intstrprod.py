@@ -3,7 +3,8 @@
 
 # Note: You must not use any built-in BigInteger library or convert the inputs to integer directly.
 
-class Solution:
-    def multiply(self, num1: str, num2: str) -> str:
-        return str(int(num1)*int(num2))
+"""Basic solution"""
+# class Solution:
+#     def multiply(self, num1: str, num2: str) -> str:
+#         return str(int(num1)*int(num2))
         
