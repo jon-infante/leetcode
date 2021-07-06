@@ -27,29 +27,23 @@ class Solution:
             tot_sum += traverse_sum(self,l2)
 
         output = str(tot_sum)[::-1]
-        l3 = ListNode(0)
-        def linked_sum(self, stri_num ,ll):
-            if len(stri_num) == 1:
-                return ListNode(int(stri_num))
-            ll.val = int(stri_num[0])
-            #Recursively add new nodes to the linked list
-            ll.next = linked_sum(self,stri_num[1::], ll)
-    
-            return ll
-            # for i, num in enumerate(stri_num):
-            #     ll.val = stri_num[i-1]
-            #     if i == len(stri_num):
-            #         return ll
-            #     ll.next = ListNode(0)
+        l3 = ListNode(None)
 
-            #     ll = ll.next
+        #Attach each node to the linked list
+        def linked_sum(self, stri_num ,ll):
+            cur = ll
+            for i, num in enumerate(stri_num):
+                cur.val = int(num)
+                if i == len(stri_num)-1:
+                    break
+                cur.next = ListNode()
+                cur = cur.next
                 
-            # return ll
+            return ll
 
         output_node = linked_sum(self,output,l3)
-        return output_node.val
 
-
+        return output_node
 
 
 
