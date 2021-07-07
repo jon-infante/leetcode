@@ -14,12 +14,11 @@ class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         tot_sum = 0
         def traverse_sum(self, ll, pointer=0, sum=0):
-            #Taken our given position in the linked list, we add a number of trailing zeros to indicate an increase its place value
+            #Taken our given position in the linked list, we add a number of trailing zeros to indicate an increase in its place value
             while True:
                 zeros = pointer * '0'
                 sum += int(f'{ll.val}{zeros}')
                 ll = ll.next
-                #If the value is None
                 if not ll:
                     return sum
                 pointer += 1
