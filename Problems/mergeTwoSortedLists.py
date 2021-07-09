@@ -27,6 +27,7 @@ class Solution:
         curr1 = l1
         curr2 = l2
         while curr1 and curr2:
+            print(self.return_ll(head.next))
             if curr1.val < curr2.val:
                 o.next = curr1
                 o = o.next
