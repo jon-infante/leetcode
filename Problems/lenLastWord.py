@@ -19,7 +19,6 @@ class Solution:
         return last
 
 
-
 if __name__ == '__main__':
     c = "My bagel is nice and warm and creamy        "
     s = "Hello World"
@@ -27,4 +26,4 @@ if __name__ == '__main__':
     t = " "
     p = "b   a    "
     solution = Solution()
-    print(solution.lengthOfLastWord(c))
+    print(solution.lengthOfLastWord(s))
