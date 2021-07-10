@@ -18,7 +18,7 @@ class Solution:
 
         while r < len(nums):
             if nums[l] == 0:
-                if abs(nums[r]) > abs(nums[l]):
+                if abs(nums[r]) > abs(nums[l]): # nums[r] != 0
                     nums[l], nums[r] = nums[r], nums[l]
                     l += 1
                 r += 1
