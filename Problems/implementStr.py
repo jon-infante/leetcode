@@ -29,7 +29,9 @@ class Solution:
             l += 1
             r += 1
 
-            slice = haystack[l:r+1]
+            sliced = haystack[l:r+1]
+
+        return -1
 
 
 # 'ab'  'a'
