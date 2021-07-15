@@ -1,6 +1,6 @@
 # from typing import List
 
-# #dp
+# #dp, helped solution from leetcode
 
 # class Solution:
 #     def lastStoneWeightII(self, stones: List[int]) -> int:
